@@ -1,0 +1,11 @@
+deger = int(input("BİR SAYI GİRİNİZ"))
+if deger <= 0:
+      print("lütfen 0'dan BÜYÜK bir TAM SAYI giriniz")
+else:
+      print("collatz dizisi:")
+      while deger != 1:
+            if deger % 2 == 0:
+               deger = deger // 2
+            else:
+                 deger= 3*deger+1
+            print(deger)
